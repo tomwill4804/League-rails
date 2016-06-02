@@ -14,5 +14,8 @@ class User < ActiveRecord::Base
 
   has_many :positions
   has_many :teams, through: :positions
-  
+  has_many :notifications, through: :teams
+  has_many :home_games, through: :teams
+  has_many :away_games, through: :teams
+
 end

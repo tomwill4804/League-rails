@@ -11,11 +11,13 @@
 #  updated_at :datetime         not null
 #
 
-class Team < ActiveRecord::Base
+class TeamSerializer < ActiveModel::Serializer
+
+  attributes :id, :name, :won, :lost, :rank
 
   has_many :positions
   has_many :notifications
-  has_many :home_games, :class_name => "Game", foreign_key: 'home_team_id'
-  has_many :away_games, :class_name => "Game", foreign_key: 'away_team_id'
+  has_many :home_games
+  has_many :away_games
 
 end

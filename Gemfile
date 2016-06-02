@@ -26,6 +26,7 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise'
 gem 'annotate', '~> 2.7.0'
 gem 'better_errors'
+gem 'active_model_serializers', '~> 0.10.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

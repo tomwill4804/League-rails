@@ -14,10 +14,11 @@
 #  updated_at  :datetime         not null
 #
 
-require 'test_helper'
+class PositionSerializer < ActiveModel::Serializer
 
-class PositionTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  attributes :id, :ptype, :officer, :spikes, :assists
+
+  belongs_to :user
+  belongs_to :team
+
 end

@@ -4,9 +4,9 @@
 #
 #  id         :integer          not null, primary key
 #  name       :string
-#  won        :integer
-#  lost       :integer
-#  rank       :integer
+#  won        :integer          default(0)
+#  lost       :integer          default(0)
+#  rank       :integer          default(0)
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #

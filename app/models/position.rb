@@ -3,11 +3,11 @@
 # Table name: positions
 #
 #  id          :integer          not null, primary key
-#  type        :string
+#  ptype       :string
 #  officer     :string
-#  spikes      :integer
-#  assists     :integer
-#  gamesPlayed :integer
+#  spikes      :integer          default(0)
+#  assists     :integer          default(0)
+#  gamesPlayed :integer          default(0)
 #  team_id     :integer
 #  user_id     :integer
 #  created_at  :datetime         not null
