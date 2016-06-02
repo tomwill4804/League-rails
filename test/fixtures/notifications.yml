@@ -1,0 +1,21 @@
+# == Schema Information
+#
+# Table name: notifications
+#
+#  id         :integer          not null, primary key
+#  date       :date
+#  text       :string
+#  team_id    :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2016-06-01
+  text: MyString
+
+two:
+  date: 2016-06-01
+  text: MyString
