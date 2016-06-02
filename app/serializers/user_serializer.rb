@@ -12,7 +12,7 @@
 
 class UserSerializer < ActiveModel::Serializer
 
-  attributes :id, :name, :email, :phone
+  attributes :id, :name, :email, :phone, :access_token
 
   #has_many :positions
   has_many :teams

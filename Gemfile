@@ -12,8 +12,7 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise'
 gem 'annotate', '~> 2.7.0'
 gem 'active_model_serializers', '~> 0.10.0'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
   gem 'byebug'
@@ -21,6 +20,7 @@ group :development, :test do
   gem 'spring'
   gem 'sqlite3'
   gem 'better_errors'
+  gem 'pry'
 end
 
 group :production do

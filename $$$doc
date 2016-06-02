@@ -1,0 +1,20 @@
+
+Web interface and API for design project (first design in list)
+
+http://tombase.herokuapp.com/admin
+
+User: admin@example.com
+Password: password
+
+
+API (now with auth)
+
+http://tombase.herokuapp.com/login?email=tom@dtssoftware.com&password=pw
+(returns JSON with access_token field)
+(this userid/password can be moved into http headers)
+
+http://tombase.herokuapp.com/users/?access_token=d4b2f4318b4bb2e18a03c8758cce1556
+(return current user info)
+
+http://tombase.herokuapp.com/teams/?access_token=d4b2f4318b4bb2e18a03c8758cce1556
+(return current user team(s) info including all players/games/notifications)

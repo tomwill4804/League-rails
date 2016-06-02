@@ -7,10 +7,10 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
 
-  User.create(name: "Tom", email: "tom@dtssoftware.com", phone: "111-1111")
-  User.create(name: "Joe", email: "joe@dtssoftware.com", phone: "111-1111")
-  User.create(name: "Fred", email: "fred@dtssoftware.com", phone: "111-1111")
-  User.create(name: "Sam", email: "sam@dtssoftware.com", phone: "111-1111")
+  User.create(name: "Tom", email: "tom@dtssoftware.com", phone: "111-1111", password: "pw")
+  User.create(name: "Joe", email: "joe@dtssoftware.com", phone: "111-1111", password: "pw")
+  User.create(name: "Fred", email: "fred@dtssoftware.com", phone: "111-1111", password: "pw")
+  User.create(name: "Sam", email: "sam@dtssoftware.com", phone: "111-1111", password: "pw")
 
   Team.where(name: "UNC").first_or_create
   Team.where(name: "State").first_or_create

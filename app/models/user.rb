@@ -12,6 +12,8 @@
 
 class User < ActiveRecord::Base
 
+  has_secure_password
+
   has_many :positions
   has_many :teams, through: :positions
   has_many :notifications, through: :teams
